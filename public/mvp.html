@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>MVP - SIP Safety Net</title>
+  <link rel="stylesheet" href="/css/styles.css">
+  <link rel="stylesheet" href="/css/mvp.css">
+</head>
+<body>
+  <header class="site-header"><div class="inner">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">◈</span>SIP Safety Net</a>
+    <nav aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/discovery.html">Discovery Engine</a>
+      <a href="/mvp.html" aria-current="page">MVP</a>
+      <button id="theme" class="theme-btn" type="button" aria-label="Switch theme">☾</button>
+    </nav>
+  </div></header>
+
+  <main>
+    <p class="kicker">Part 2</p>
+    <h1 class="page-title">Try pausing a SIP</h1>
+    <p class="notice">Prototype only. This is not investment advice and does not recommend any fund or stock. It is not Groww's product.</p>
+
+    <div class="mvp-layout section">
+      <div class="phone" aria-label="Demo app screen">
+        <div class="phone-screen">
+          <div class="app-bar"><span>My SIPs</span><small>Demo data</small></div>
+          <section class="sip-card" aria-labelledby="sip-name">
+            <div class="sip-head">
+              <h2 id="sip-name">Demo Growth Fund</h2>
+              <span class="tag">Active</span>
+            </div>
+            <dl class="sip-stats">
+              <div><dt>Monthly SIP</dt><dd>₹5,000</dd></div>
+              <div><dt>Invested</dt><dd>₹30,000</dd></div>
+              <div><dt>Current value</dt><dd>₹28,740</dd></div>
+              <div><dt>Last 30 days</dt><dd class="down" id="pct">▼ 4.2% down</dd></div>
+            </dl>
+            <button id="pause" type="button">Pause SIP</button>
+          </section>
+          <div id="outcome" class="outcome" role="status" aria-live="polite"></div>
+          <p class="demo-note">Fictional fund and numbers</p>
+        </div>
+      </div>
+
+      <aside class="card how">
+        <h2>Your task</h2>
+        <ol>
+          <li>Tap <b>Pause SIP</b> on the demo card.</li>
+          <li>Pick the reason closest to yours and add a note if you like.</li>
+          <li>Read the reply, then choose to keep, lower or pause.</li>
+        </ol>
+        <h2>What is protected</h2>
+        <ul class="check-list">
+          <li>No fund or stock recommendations</li>
+          <li>No fear, FOMO or urgency</li>
+          <li>Every AI reply is checked before you see it</li>
+          <li>Pausing always stays one tap away</li>
+        </ul>
+      </aside>
+    </div>
+
+    <dialog id="dlg" aria-labelledby="dlg-title">
+      <form method="dialog" id="step1">
+        <h2 id="dlg-title">Why do you want to pause?</h2>
+        <fieldset>
+          <legend class="muted small">Pick the closest reason</legend>
+          <label class="opt"><input type="radio" name="reason" value="market_worry" checked> I'm worried about the market or my portfolio</label>
+          <label class="opt"><input type="radio" name="reason" value="money_tight"> Money is tight right now</label>
+          <label class="opt"><input type="radio" name="reason" value="deduction_status"> Money was deducted but I don't see units</label>
+          <label class="opt"><input type="radio" name="reason" value="app_issue"> I had trouble using the app</label>
+          <label class="opt"><input type="radio" name="reason" value="other"> Something else</label>
+        </fieldset>
+        <label for="note" class="muted small">Anything to add? (optional)</label>
+        <textarea id="note" maxlength="400" style="min-height:90px" placeholder="Type here in your own words"></textarea>
+        <div class="row">
+          <button type="button" id="ask">Continue</button>
+          <button type="button" class="secondary" id="cancel1">Close</button>
+        </div>
+      </form>
+
+      <div id="step2" hidden>
+        <h2>A note before you decide</h2>
+        <p id="msg" class="reply"></p>
+        <p id="badge" class="badge"></p>
+        <details>
+          <summary>How was this checked?</summary>
+          <ul id="checks"></ul>
+        </details>
+        <p class="muted small">Not investment advice. For personal guidance, speak to a SEBI-registered investment adviser.</p>
+        <div class="row">
+          <button type="button" class="secondary" data-choice="continue">Keep my SIP</button>
+          <button type="button" class="secondary" data-choice="reduce">Lower the amount</button>
+          <button type="button" data-choice="pause">Pause anyway</button>
+        </div>
+      </div>
+    </dialog>
+  </main>
+  <footer class="site-footer">Not investment advice. For personal guidance, speak to a SEBI-registered investment adviser.</footer>
+  <script type="module" src="/js/theme.js"></script>
+  <script type="module" src="/js/mvp.js"></script>
+</body>
+</html>

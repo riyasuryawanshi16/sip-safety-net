@@ -1,0 +1,13 @@
+{
+  "name": "sip-safety-net",
+  "version": "0.1.0",
+  "private": true,
+  "description": "AI discovery engine and eval-gated 'Contextual Safety Net' MVP for 12-month SIP continuation (Groww).",
+  "type": "module",
+  "scripts": {
+    "dev": "npx wrangler pages dev public",
+    "deploy": "npx wrangler pages deploy public --project-name sip-safety-net",
+    "eval": "node evals/run_golden_eval.js",
+    "eval:gate": "node evals/run_gate_eval.js"
+  }
+}

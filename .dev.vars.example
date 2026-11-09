@@ -1,0 +1,4 @@
+# Copy to .dev.vars for local runs. Never commit the real key.
+# Free key: https://aistudio.google.com/apikey
+GEMINI_API_KEY=
+GEMINI_MODEL=gemini-3.1-flash-lite,gemini-3.5-flash-lite,gemini-3.5-flash

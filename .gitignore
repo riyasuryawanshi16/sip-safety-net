@@ -1,0 +1,10 @@
+node_modules/
+.dev.vars
+.env
+.env.local
+.wrangler/
+.DS_Store
+*.log
+# Raw scraped data may contain personal info; keep it local
+data/raw/
+.claude/

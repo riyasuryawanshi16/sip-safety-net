@@ -1,0 +1,21 @@
+id,review,ai_theme,human_tag,agreed,note
+1,"Money deducted from bank via AutoPay but not showing in Groww. Is this a scam? Pausing future SIPs.",Operational Void,Operational Void,yes,T+1/T+2 settlement anxiety
+2,"My portfolio is red everyday. I clicked pause until it goes back to green.",Frictionless Panic,Frictionless Panic,yes,Urge to regain control during a dip
+3,"No one told me it goes down this much. Direct MFs suck.",UI/UX Friction,Linear Growth Fallacy,no,Correction 1: root cause is unset expectations not UX
+4,"Wanted to reduce amount but could not find the edit button, so I just canceled.",UI/UX Friction,UI/UX Friction,yes,Edit discoverability
+5,"Market crashed yesterday so I stopped my auto-pay. Will start when green again.",Frictionless Panic,Frictionless Panic,yes,Market timing
+6,"Lost my job this month so had to stop the SIP.",Financial Hardship,Financial Hardship,yes,Non-product churn
+7,"Groww app is hanging on the mandate page. Canceling SIP.",UI/UX Friction,UI/UX Friction,yes,Technical bug
+8,"Is it better to pause my HDFC small cap SIP right now? Market seems high.",General Inquiry,Frictionless Panic,no,Correction 2: market-timing intent; also names a specific fund
+9,"It's been 2 days and units are not allocated. Very bad experience, stopped.",Operational Void,Operational Void,yes,T+1 anxiety
+10,"I thought mutual funds give 12% guaranteed every year. Mine is at -2%. Paused.",Linear Growth Fallacy,Linear Growth Fallacy,yes,Expectation mismatch
+11,"Can't link my new bank account for SIP. Deleted the SIP.",UI/UX Friction,UI/UX Friction,yes,Account management friction
+12,"Portfolio down by 5k in one day. Not meant for this, stopped my SIPs.",Frictionless Panic,Frictionless Panic,yes,Reaction to absolute loss
+13,"Customer support didn't explain why my returns are negative. Stopping.",Linear Growth Fallacy,Linear Growth Fallacy,yes,Missing educational framing
+14,"I need to pay hospital bills, canceling my SIP for now.",Financial Hardship,Financial Hardship,yes,Emergency liquidity
+15,"It says 'Processing' for 3 days. I don't trust this app anymore. Paused SIP.",Operational Void,Operational Void,yes,Trust deficit from delay
+16,"SIP bounced because of low balance, then bank charged me 295 Rs. I canceled it in anger.",Operational Void,Financial Hardship / Ops,no,Correction 3: bank bounce penalty mixes finance limits and anger
+17,"Elections coming up, market will crash. Paused my 10k SIP till June.",Frictionless Panic,Frictionless Panic,yes,Event-driven timing
+18,"Thought of investing for 5 years but seeing red in 2nd month is too scary. Paused.",Linear Growth Fallacy,Linear Growth Fallacy,yes,Long-term goal vs short-term panic
+19,"Where is the option to skip just one month? Had to cancel entirely.",UI/UX Friction,UI/UX Friction,yes,No skip feature
+20,"SIP deduction date is wrong, support didn't help. Stopped it.",UI/UX Friction,UI/UX Friction,yes,Support and UI frustration

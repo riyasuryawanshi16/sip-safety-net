@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discovery Engine - SIP Safety Net</title>
+  <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+  <header class="site-header"><div class="inner">
+    <a class="brand" href="/"><span class="brand-mark" aria-hidden="true">◈</span>SIP Safety Net</a>
+    <nav aria-label="Main">
+      <a href="/">Home</a>
+      <a href="/discovery.html" aria-current="page">Discovery Engine</a>
+      <a href="/mvp.html">MVP</a>
+      <button id="theme" class="theme-btn" type="button" aria-label="Switch theme">☾</button>
+    </nav>
+  </div></header>
+
+  <main>
+    <p class="kicker">Part 1</p>
+    <h1 class="page-title">Why do investors pause their SIP?</h1>
+    <p class="lead">Paste feedback about SIPs, one item per line (up to 60). AI tags each with a churn theme and a short piece of evidence.</p>
+
+    <section class="card">
+      <label for="input" class="muted small">Reviews or comments, one per line</label>
+      <textarea id="input" placeholder="Money deducted via AutoPay but not showing in the app. Pausing future SIPs.&#10;My portfolio is red every day, I paused until it turns green."></textarea>
+      <div class="row">
+        <button id="run">Classify</button>
+        <button id="golden" class="secondary">Run on golden set (20 items)</button>
+      </div>
+      <div id="status" class="status" role="status" aria-live="polite"></div>
+    </section>
+
+    <section id="agreement" class="section"></section>
+    <section id="summary" class="section"></section>
+    <section id="results" class="section"></section>
+  </main>
+  <footer class="site-footer">Themes: Operational Void, Frictionless Panic, Linear Growth Fallacy, UI/UX Friction, Financial Hardship.</footer>
+  <script type="module" src="/js/theme.js"></script>
+  <script type="module" src="/js/discovery.js"></script>
+</body>
+</html>
